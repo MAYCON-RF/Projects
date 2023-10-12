@@ -1,9 +1,9 @@
 
 //ENTRADA DE DADOS
-let nomeDoHeroi = "Super-Gocu";
-let quantidadeDeXp = 10000; //será digitada pelo usurio
-let classificação = "";
-if (quantidadeDeXp < 1000) { //será digitada pelo usurio
+let nomeDoHeroi = "Super-Gocu"; //será digitada pelo usuario
+let quantidadeDeXp = 10000; //será digitada pelo usuario
+let classificação = "";  
+if (quantidadeDeXp < 1000) { 
     classificação = "Ferro";
 } else if (quantidadeDeXp >= 1001 && quantidadeDeXp <= 2000) {
     classificação = "Bronze";
