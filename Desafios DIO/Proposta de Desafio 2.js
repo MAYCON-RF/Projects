@@ -1,4 +1,4 @@
-Instruções para entrega
+/* Instruções para entrega
  #2️⃣ Calculadora de partidas Rankeadas
 
 **O Que deve ser utilizado**
@@ -26,3 +26,5 @@ Se vitórias for maior ou igual a 101 = Imortal
 
 Ao final deve se exibir uma mensagem:
 "O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
+
+*/
