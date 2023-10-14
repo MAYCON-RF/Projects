@@ -1,9 +1,11 @@
+/* O objetivo é criar uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói e, com base na XP, determinar o nível do herói. */
 
-//ENTRADA DE DADOS
-let nomeDoHeroi = "Super-Gocu"; //será digitada pelo usuario
+
+let nomeDoHeroi = "Super-kuGo"; //será digitada pelo usuario
 let quantidadeDeXp = 10000; //será digitada pelo usuario
-let classificação = "";  
-if (quantidadeDeXp < 1000) { 
+
+let classificação = "";
+if (quantidadeDeXp < 1000) {
     classificação = "Ferro";
 } else if (quantidadeDeXp >= 1001 && quantidadeDeXp <= 2000) {
     classificação = "Bronze";

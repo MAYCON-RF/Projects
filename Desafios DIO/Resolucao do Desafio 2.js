@@ -1,11 +1,15 @@
-let qtdDeVitorias = 20 //dados fornecidos do usuário
-let qtdDeDerrotas = 10 //dados fornecidos do usuário
+/* O objetivo é criar uma função que recebe a quantidade de vitórias e derrotas de um jogador e calcula o saldo das partidas ranqueadas. */
+
+let qtdDeVitorias = 20
+let qtdDeDerrotas = 10
 let saldoDeVitorias = calculaSaldo(qtdDeVitorias, qtdDeDerrotas);
 let classificacao = defineElo(saldoDeVitorias);
+
 // calcula o saldo
 function calculaSaldo(qtdDeVitorias, qtdDeDerrotas) {
     return qtdDeVitorias - qtdDeDerrotas;
 }
+
 //calcula o elo
 function defineElo(saldo) {
     if (saldo <= 10) {
@@ -31,4 +35,6 @@ function defineElo(saldo) {
     }
 
 }
+
+//saida
 console.log(`O Herói tem de saldo de ${saldoDeVitorias} e está no nível de ${classificacao}`)

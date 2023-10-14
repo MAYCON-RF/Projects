@@ -5,4 +5,5 @@ function reverseName(name) {
         console.log(invert[i]);
     }
 }
-let nameInverter = reverseName("Nadir Bossor Colono Pereira Marques Portuga");
+
+let nameInverter = reverseName("Nadir Bossor Colono Pereira Marques");

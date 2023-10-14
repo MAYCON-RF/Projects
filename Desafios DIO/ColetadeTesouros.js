@@ -1,30 +1,18 @@
+/* O objetivo desse código é informar o jogador sobre a presença de tesouros ou monstros em cada sala, com base nas configurações definidas nas listas salasComTesouro e salasComMonstro */
 
 
-Atenção
-Em nossa resolução utilizamos a função.includes() do JavaScript para verificar se um número(representando a sala atual) está presente nos arrays salasComTesouro e salasComMonstro.
+const totalRooms = parseInt(gets());
+const treasureRoom = [2, 4, 7];
+const roomsWithMonstro = [3, 6, 8];
 
-    Entrada
+for (let room = 1; room <= totalRooms; room++) {
+    const hasTreasure = treasureRoom.includes(room);
+    const hasMonster = roomsWithMonstro.includes(room);
 
-O número total de salas no dungeon(um número inteiro).
-    Saída
+    if (hasTreasure) {
+        print("Tesouro na sala " + room + "!");
 
-Sempre que encontrar um tesouro, imprima " Tesouro na sala X!".
-
-Sempre que encontrar um monstro, imprima "Monstro na sala X!".
-    Exemplos
-
-A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas.Certifique - se de testar seu programa com esses exemplos e com outros casos possíveis.
-
-
-const totalSalas = parseInt(gets());
-const salasComTesouro = [2, 4, 7];
-const salasComMonstro = [3, 6, 8];
-for (let sala = 1; sala <= totalSalas; sala++) {
-    const temTesouro = salasComTesouro.includes(sala);
-    const temMonstro = salasComMonstro.includes(sala);
-    if (temTesouro) {
-        print("Tesouro na sala " + sala + "!");
-    } else if (temMonstro) {
-        print("Monstro na sala " + sala + "!");
+    } else if (hasMonster) {
+        print("Monstro na sala " + room + "!");
     }
 }

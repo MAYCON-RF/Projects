@@ -1,5 +1,5 @@
 /**
-Cria uma classe generica que represente um personagem com as seguintes propriedades: nome, idade e tipo;
+Cria uma classe generica que represente um personagem com as seguintes propriedades: nome, idade e tipo.
 */
 
 class personagem {

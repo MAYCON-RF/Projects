@@ -1,18 +1,24 @@
-let escolhaDoTreinador = parseInt(gets());
-let pokemonEscolhido;
-switch (escolhaDoTreinador) {
+/* Código usado para receber a escolha de um Pokémon inicial de um jogador e informar qual Pokémon foi escolhido. */
+
+let trainerChoice = parseInt(gets());
+let chosenPokemon;
+
+switch (trainerChoice) {
     case 1:
-        pokemonEscolhido = "Bulbasaur";
+        chosenPokemon = "Bulbasaur";
         break;
+
     case 2:
-        pokemonEscolhido = "Charmander";
+        chosenPokemon = "Charmander";
         break;
+
     case 4:
-        pokemonEscolhido = "Pikachu";
+        chosenPokemon = "Pikachu";
         break;
+
     case 5:
-        pokemonEscolhido = "Mewtwo";
+        chosenPokemon = "Mewtwo";
         break;
 }
 
-print("Voce escolheu o " + pokemonEscolhido + " como seu Pokemon inicial.");
+print("Voce escolheu o " + chosenPokemon + " como seu Pokemon inicial.");

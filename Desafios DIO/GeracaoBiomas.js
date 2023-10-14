@@ -1,7 +1,7 @@
-const quantidadeGolpes = 4;
-let minerais = ["Carvao", "Ferro", "Diamante", "Pedra"];
-for (let i = 1; i <= quantidadeGolpes; i++) {
-    let minaIndex = (i-1) % minerais.length;
-    print(i+": "+minerais[minaIndex]);
+const quantityScams = 4;
+let minerals = ["Carvao", "Ferro", "Diamante", "Pedra"];
+for (let i = 1; i <= quantityScams; i++) {
+    let mineIndex = (i-1) % minerals.length;
+    print(i+": "+minerals[mineIndex]);
 
 }
